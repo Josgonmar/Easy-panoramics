@@ -1,1 +1,3 @@
-# Easy-panoramics-maker
+# Easy-panoramics
+
+[WIP]
