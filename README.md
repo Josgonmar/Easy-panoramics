@@ -15,7 +15,7 @@ Even though OpenCV has a high level function to perform this operation, I've add
 
 Originally, the panorama would result in this:
 
-![alt text](https://github.com/Josgonmar/Easy-panoramics/blob/master/docs/before.jpg?raw=true)
+![alt text](https://github.com/Josgonmar/Easy-panoramics/blob/master/docs/before.jpg?raw=false)
 
 To automatically remove those black borders, several morphological operations are performed.
 First, we convert it into a gray scale picture, so we can perform a thresholding operation and obtain a binary mask.
