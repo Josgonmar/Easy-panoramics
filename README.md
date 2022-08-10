@@ -15,7 +15,7 @@ Even though OpenCV has a high level function to perform this operation, I've add
 
 Originally, the panorama would result in this:
 
-![alt text](https://github.com/Josgonmar/Easy-panoramics/blob/master/docs/before.jpg?raw=true)
+![alt text](https://github.com/Josgonmar/Easy-panoramics/blob/main/docs/before.jpg?raw=true)
 
 To automatically remove those black borders, several morphological operations are performed.
 First, we convert it into a gray scale picture, so we can perform a thresholding operation and obtain a binary mask.
@@ -24,7 +24,7 @@ After that, we create a new mask containing the filled bounding box of the conto
 
 This rectangle will be eroded and substracted to the threshold image while there are still non-zero pixels. The resulting binary mask should contain a filled rectangle that fits inside the contour, getting as less black border pixels as possible.
 
-![alt text](https://github.com/Josgonmar/Easy-panoramics/blob/master/docs/after.jpg?raw=true)
+![alt text](https://github.com/Josgonmar/Easy-panoramics/blob/main/docs/after.jpg?raw=true)
 
 *Note that some image information may be lost, as the original one will be cropped.*
 
